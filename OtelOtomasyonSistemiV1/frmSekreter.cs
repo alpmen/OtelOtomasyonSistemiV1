@@ -50,6 +50,7 @@ namespace OtelOtomasyonSistemiV1
         private void button4_Click(object sender, EventArgs e)
         {
             frmDuyurular fr = new frmDuyurular();
+            fr.sekreterıd = label5.Text;
             fr.Show();
         }
 

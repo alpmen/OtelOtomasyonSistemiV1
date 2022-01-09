@@ -18,7 +18,7 @@ namespace OtelOtomasyonSistemiV1
             InitializeComponent();
         }
         sqlBaglanti bgl = new sqlBaglanti();
-
+        public string sekreterıd;
         public void listele()
         {
             OracleCommand komut = new OracleCommand("select * from TBLDUYURU", bgl.baglanti());
@@ -44,6 +44,7 @@ namespace OtelOtomasyonSistemiV1
                 OracleCommand komut = new OracleCommand("insertDuyuru", bgl.baglanti());
                 komut.CommandType = CommandType.StoredProcedure;
                 komut.Parameters.Add("PARAM1", OracleDbType.Varchar2).Value = richTextBox1.Text;
+                komut.Parameters.Add("PARAM2", OracleDbType.Decimal).Value = Convert.ToInt32(sekreterıd);
                 OracleDataAdapter da = new OracleDataAdapter(komut);
                 komut.ExecuteNonQuery();
 

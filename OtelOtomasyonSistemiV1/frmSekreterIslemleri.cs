@@ -43,6 +43,7 @@ namespace OtelOtomasyonSistemiV1
 
                 OracleCommand komut = new OracleCommand("insertSekreter", bgl.baglanti());
                 komut.CommandType = CommandType.StoredProcedure;
+                
                 komut.Parameters.Add("PARAM1", OracleDbType.Varchar2).Value = textBox2.Text;
                 komut.Parameters.Add("PARAM2", OracleDbType.Varchar2).Value = textBox3.Text;
                 OracleDataAdapter da = new OracleDataAdapter(komut);
