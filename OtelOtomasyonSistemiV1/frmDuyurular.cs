@@ -47,7 +47,6 @@ namespace OtelOtomasyonSistemiV1
                 komut.Parameters.Add("PARAM2", OracleDbType.Decimal).Value = Convert.ToInt32(sekreterıd);
                 OracleDataAdapter da = new OracleDataAdapter(komut);
                 komut.ExecuteNonQuery();
-
                 MessageBox.Show("Ekleme işlemi başarılı");
                 bgl.baglanti().Close();
             }

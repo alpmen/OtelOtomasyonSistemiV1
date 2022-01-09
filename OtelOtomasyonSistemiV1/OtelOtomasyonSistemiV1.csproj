@@ -132,6 +132,12 @@
     <Compile Include="frmOdaIslemleri.Designer.cs">
       <DependentUpon>frmOdaIslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmodaLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmodaLog.Designer.cs">
+      <DependentUpon>frmodaLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRezervasyonIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,12 @@
     </Compile>
     <Compile Include="frmSiparişTablosu.Designer.cs">
       <DependentUpon>frmSiparişTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYiyecekLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYiyecekLog.Designer.cs">
+      <DependentUpon>frmYiyecekLog.cs</DependentUpon>
     </Compile>
     <Compile Include="frmYonetici.cs">
       <SubType>Form</SubType>
@@ -204,6 +216,9 @@
     <EmbeddedResource Include="frmOdaIslemleri.resx">
       <DependentUpon>frmOdaIslemleri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmodaLog.resx">
+      <DependentUpon>frmodaLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRezervasyonIslemleri.resx">
       <DependentUpon>frmRezervasyonIslemleri.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSiparişTablosu.resx">
       <DependentUpon>frmSiparişTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYiyecekLog.resx">
+      <DependentUpon>frmYiyecekLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmYonetici.resx">
       <DependentUpon>frmYonetici.cs</DependentUpon>

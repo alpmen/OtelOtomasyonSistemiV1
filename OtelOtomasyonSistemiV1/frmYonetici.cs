@@ -71,5 +71,17 @@ namespace OtelOtomasyonSistemiV1
             fr.Show();
             this.Hide();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            frmodaLog fr = new frmodaLog();
+            fr.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmYiyecekLog fr = new frmYiyecekLog();
+            fr.Show();
+        }
     }
 }

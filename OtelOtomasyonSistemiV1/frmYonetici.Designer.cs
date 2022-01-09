@@ -41,6 +41,8 @@ namespace OtelOtomasyonSistemiV1
             this.button7 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -79,7 +81,7 @@ namespace OtelOtomasyonSistemiV1
             // button3
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(210, 504);
+            this.button3.Location = new System.Drawing.Point(210, 576);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(185, 66);
             this.button3.TabIndex = 4;
@@ -160,13 +162,37 @@ namespace OtelOtomasyonSistemiV1
             this.label5.TabIndex = 11;
             this.label5.Text = "-";
             // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.Location = new System.Drawing.Point(210, 501);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(185, 66);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "YİYECEK-İÇECEK LOG";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.Location = new System.Drawing.Point(12, 576);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(192, 66);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "ODA LOG";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // frmYonetici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(421, 638);
+            this.ClientSize = new System.Drawing.Size(421, 684);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button7);
@@ -201,5 +227,7 @@ namespace OtelOtomasyonSistemiV1
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button8;
     }
 }
