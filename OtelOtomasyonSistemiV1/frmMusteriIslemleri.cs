@@ -149,5 +149,15 @@ namespace OtelOtomasyonSistemiV1
                 MessageBox.Show("Lütfen bir müşteri seçin");
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OracleCommand komut = new OracleCommand("select * from TBLMUSTERI where ADSOYAD LIKE '%"+textBox5.Text.Trim()+"%'", bgl.baglanti());
+            OracleDataAdapter da = new OracleDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            bgl.baglanti().Close();
+        }
     }
 }

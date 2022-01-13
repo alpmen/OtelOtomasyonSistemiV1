@@ -48,6 +48,8 @@ namespace OtelOtomasyonSistemiV1
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -230,6 +232,24 @@ namespace OtelOtomasyonSistemiV1
             this.label6.TabIndex = 33;
             this.label6.Text = "BORÇ:";
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(12, 321);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(221, 29);
+            this.textBox5.TabIndex = 34;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.Location = new System.Drawing.Point(239, 321);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(79, 29);
+            this.button6.TabIndex = 35;
+            this.button6.Text = "ARA";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // frmMusteriIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -237,6 +257,8 @@ namespace OtelOtomasyonSistemiV1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 582);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -285,5 +307,7 @@ namespace OtelOtomasyonSistemiV1
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button6;
     }
 }
